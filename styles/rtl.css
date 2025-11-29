@@ -1,0 +1,327 @@
+/* RTL (Right-to-Left) specific styles */
+
+[dir="rtl"] {
+  /* Layout */
+  direction: rtl;
+  text-align: right;
+}
+
+[dir="rtl"] .prose {
+  text-align: right;
+}
+
+[dir="rtl"] .prose ul,
+[dir="rtl"] .prose ol {
+  padding-right: 1.625em;
+  padding-left: 0;
+}
+
+[dir="rtl"] .prose blockquote {
+  border-right: 4px solid;
+  border-left: none;
+  padding-right: 1.625em;
+  padding-left: 0;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+/* Flexbox RTL */
+[dir="rtl"] .flex-row {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .flex-row-reverse {
+  flex-direction: row;
+}
+
+[dir="rtl"] .space-x-2 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 1;
+}
+
+[dir="rtl"] .space-x-4 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 1;
+}
+
+[dir="rtl"] .space-x-6 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 1;
+}
+
+[dir="rtl"] .space-x-8 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 1;
+}
+
+/* Margin RTL */
+[dir="rtl"] .ml-2 {
+  margin-left: 0;
+  margin-right: 0.5rem;
+}
+
+[dir="rtl"] .ml-3 {
+  margin-left: 0;
+  margin-right: 0.75rem;
+}
+
+[dir="rtl"] .ml-4 {
+  margin-left: 0;
+  margin-right: 1rem;
+}
+
+[dir="rtl"] .mr-2 {
+  margin-right: 0;
+  margin-left: 0.5rem;
+}
+
+[dir="rtl"] .mr-3 {
+  margin-right: 0;
+  margin-left: 0.75rem;
+}
+
+[dir="rtl"] .mr-4 {
+  margin-right: 0;
+  margin-left: 1rem;
+}
+
+/* Padding RTL */
+[dir="rtl"] .pl-3 {
+  padding-left: 0;
+  padding-right: 0.75rem;
+}
+
+[dir="rtl"] .pl-4 {
+  padding-left: 0;
+  padding-right: 1rem;
+}
+
+[dir="rtl"] .pl-8 {
+  padding-left: 0;
+  padding-right: 2rem;
+}
+
+[dir="rtl"] .pr-3 {
+  padding-right: 0;
+  padding-left: 0.75rem;
+}
+
+[dir="rtl"] .pr-4 {
+  padding-right: 0;
+  padding-left: 1rem;
+}
+
+[dir="rtl"] .pr-8 {
+  padding-right: 0;
+  padding-left: 2rem;
+}
+
+/* Text Alignment */
+[dir="rtl"] .text-left {
+  text-align: right;
+}
+
+[dir="rtl"] .text-right {
+  text-align: left;
+}
+
+[dir="rtl"] .text-center {
+  text-align: center;
+}
+
+/* Float */
+[dir="rtl"] .float-left {
+  float: right;
+}
+
+[dir="rtl"] .float-right {
+  float: left;
+}
+
+/* Position */
+[dir="rtl"] .left-0 {
+  left: auto;
+  right: 0;
+}
+
+[dir="rtl"] .right-0 {
+  right: auto;
+  left: 0;
+}
+
+[dir="rtl"] .inset-x-0 {
+  right: 0;
+  left: 0;
+}
+
+/* Transform */
+[dir="rtl"] .translate-x-full {
+  transform: translateX(-100%);
+}
+
+[dir="rtl"] .-translate-x-full {
+  transform: translateX(100%);
+}
+
+/* Border */
+[dir="rtl"] .border-l {
+  border-left: none;
+  border-right: 1px solid;
+}
+
+[dir="rtl"] .border-r {
+  border-right: none;
+  border-left: 1px solid;
+}
+
+[dir="rtl"] .border-l-2 {
+  border-left: none;
+  border-right: 2px solid;
+}
+
+[dir="rtl"] .border-r-2 {
+  border-right: none;
+  border-left: 2px solid;
+}
+
+/* Component-specific RTL styles */
+[dir="rtl"] .breadcrumb {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .pagination {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .modal-header {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .modal-footer {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .sidebar-item {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .table-header-cell {
+  text-align: right;
+}
+
+[dir="rtl"] .table-cell {
+  text-align: right;
+}
+
+/* Form elements RTL */
+[dir="rtl"] input[type="checkbox"],
+[dir="rtl"] input[type="radio"] {
+  margin-left: 0.5rem;
+  margin-right: 0;
+}
+
+[dir="rtl"] select {
+  background-position: left 0.5rem center;
+  padding-right: 0.75rem;
+  padding-left: 2.5rem;
+}
+
+/* Navigation RTL */
+[dir="rtl"] .nav-menu {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .dropdown-menu {
+  right: auto;
+  left: 0;
+}
+
+[dir="rtl"] .dropdown-menu-end {
+  left: auto;
+  right: 0;
+}
+
+/* Icons RTL */
+[dir="rtl"] .icon-arrow {
+  transform: rotate(180deg);
+}
+
+[dir="rtl"] .icon-chevron {
+  transform: scaleX(-1);
+}
+
+/* Custom RTL utilities */
+.rtl-mirror {
+  transform: scaleX(-1);
+}
+
+.rtl-preserve {
+  transform: none;
+}
+
+/* RTL for specific languages */
+[lang="ar"] {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+[lang="ur"] {
+  font-family: 'Jameel Noori Nastaleeq', 'Segoe UI', sans-serif;
+}
+
+[lang="fa"] {
+  font-family: 'Tahoma', 'Segoe UI', sans-serif;
+}
+
+/* RTL typography */
+[dir="rtl"] .prose {
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+[dir="rtl"] .prose h1,
+[dir="rtl"] .prose h2,
+[dir="rtl"] .prose h3,
+[dir="rtl"] .prose h4,
+[dir="rtl"] .prose h5,
+[dir="rtl"] .prose h6 {
+  font-weight: 700;
+}
+
+/* RTL code blocks */
+[dir="rtl"] .prose code {
+  direction: ltr;
+  display: inline-block;
+}
+
+[dir="rtl"] .prose pre {
+  direction: ltr;
+}
+
+/* RTL tables */
+[dir="rtl"] .prose table {
+  direction: rtl;
+}
+
+[dir="rtl"] .prose th,
+[dir="rtl"] .prose td {
+  text-align: right;
+}
+
+/* RTL blockquotes */
+[dir="rtl"] .prose blockquote {
+  border-right-width: 0.25rem;
+  border-left: none;
+}
+
+/* Print RTL */
+@media print {
+  [dir="rtl"] {
+    direction: rtl;
+  }
+  
+  [dir="rtl"] .no-print-rtl {
+    display: none !important;
+  }
+}
+
+/* Reduced motion for RTL */
+@media (prefers-reduced-motion: reduce) {
+  [dir="rtl"] * {
+    transition: none !important;
+  }
+}

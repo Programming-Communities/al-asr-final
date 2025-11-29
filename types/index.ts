@@ -1,0 +1,5 @@
+export * from './post'
+export * from './category' 
+export * from './author'
+export * from './comment'
+export * from './ad'
