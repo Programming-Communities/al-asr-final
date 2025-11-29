@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import { i18nConfig } from '@/config/i18n'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -13,6 +14,12 @@ interface LangLayoutProps {
   params: {
     lang: string
   }
+}
+
+export async function generateStaticParams() {
+  return i18nConfig.locales.map((locale) => ({
+    lang: locale.code,
+  }))
 }
 
 export default function LangLayout({ children, params }: LangLayoutProps) {
